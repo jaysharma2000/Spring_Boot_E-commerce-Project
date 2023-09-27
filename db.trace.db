@@ -1,0 +1,18 @@
+2023-09-25 16:21:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Introducing our stunning metal strap watch, a true embodiment of timeless elegance and modern sophistication. Crafted with prec... (672)"; SQL statement:
+insert into product (category_id, description, image_name, name, price, weight, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]
+2023-09-25 16:21:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Introducing our stunning metal strap watch, a true embodiment of timeless elegance and modern sophistication. Crafted with prec... (672)"; SQL statement:
+insert into product (category_id, description, image_name, name, price, weight, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]
+2023-09-25 16:21:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Introducing our stunning metal strap watch, a true embodiment of timeless elegance and modern sophistication. Crafted with prec... (672)"; SQL statement:
+insert into product (category_id, description, image_name, name, price, weight, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]
+2023-09-25 16:22:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Introducing our stunning metal strap watch, a true embodiment of timeless elegance and modern sophistication. Crafted with prec... (672)"; SQL statement:
+update product set category_id=?, description=?, image_name=?, name=?, price=?, weight=? where id=? [22001-200]
+2023-09-25 16:24:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Presenting our Metal Strap Watch - a harmonious blend of contemporary design and reliable functionality. Crafted with precision... (297)"; SQL statement:
+insert into product (category_id, description, image_name, name, price, weight, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]
+2023-09-25 16:26:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Presenting our Metal Strap Watch - a harmonious blend of contemporary design and reliable functionality. Crafted with precision... (263)"; SQL statement:
+insert into product (category_id, description, image_name, name, price, weight, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]

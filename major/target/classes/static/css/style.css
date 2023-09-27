@@ -1,0 +1,733 @@
+
+
+*{
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+
+
+.h11 {
+    font-size: 2rem; /* Equivalent to text-3xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    margin-left: 6rem;
+    margin-top: 1.4rem;
+  }
+  
+  /* Styling for the <span> element inside <h2> */
+  h2 span {
+    color: #e53e3e; /* Equivalent to text-red-600 in Tailwind CSS */
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.00rem; /* Equivalent to gap-11 in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    font-size: 1.5rem; /* Equivalent to text-xl in Tailwind CSS */
+    color: #616e82; /* Equivalent to text-gray-500 in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    margin-left: 32rem;
+    margin-top: -2rem;
+  }
+  
+  /* Styling for the <a> elements inside the <div> */
+  .nav-links  a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+  }
+  
+  /* Styling for the <a> elements on hover */
+  .nav-links a:hover {
+    color: #000; /* Change color on hover */
+  }
+
+  .nav-icons{
+    display: flex;
+    gap: 1.5rem; /* Equivalent to gap-6 in Tailwind CSS */
+    font-size: 1.3rem; /* Equivalent to text-xl in Tailwind CSS */
+    font-weight: 500;                      /* Equivalent to text-indigo-950 in Tailwind CSS */
+    margin-left: 70rem;
+    margin-top: -1.5rem;
+    color: black;
+    text-decoration: none;
+  }
+  .login-u{
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+  }
+  .icon-size{
+    font-size: 1rem;
+  }
+
+
+  .main-section{
+    display: flex;
+    width: 100%; /* Equivalent to w-full in Tailwind CSS */
+    align-items: center; /* Equivalent to items-center in Tailwind CSS */
+    background-color: #e6edf4; /* Equivalent to bg-slate-100 in Tailwind CSS */
+    padding-top: 5rem;
+  }
+  .main-section-right{
+    margin-top: 3rem;
+  }
+  .main-heading{
+    margin-left: 10rem; /* Equivalent to ml-40 in Tailwind CSS */
+    margin-top: 7rem; /* Equivalent to mt-40 in Tailwind CSS */
+    font-size: 6rem; /* Equivalent to text-8xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    line-height: 1.25; /* Equivalent to leading-normal in Tailwind CSS */
+    color: #2b343d; /* Equivalent to text-slate-700 in Tailwind CSS */
+  }
+
+  .main-discription{
+    margin-left: 10rem; /* Equivalent to ml-40 in Tailwind CSS */
+    margin-top: 2.5rem; /* Equivalent to mt-10 in Tailwind CSS */
+    font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind CSS */
+    width: 56.67%; /* Equivalent to w-2/3 in Tailwind CSS */
+    line-height: 1.5; /* Equivalent to leading-10 in Tailwind CSS */
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+    color: #6B7280; /* Equivalent to text-slate-500 in Tailwind CSS */
+  }
+
+  .main-buttun {
+    background-color: #1F2937; /* Equivalent to bg-slate-600 in Tailwind CSS */
+    padding: 0.75rem 1.5rem; /* Equivalent to p-3 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-lg in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-gray-50 in Tailwind CSS */
+    text-align: center; /* Equivalent to text-center in Tailwind CSS */
+    margin: 2.5rem 0; /* Equivalent to m-10 in Tailwind CSS */
+    margin-left: 10rem; /* Equivalent to ml-40 in Tailwind CSS */
+    transition: background-color 0.1s; /* Equivalent to hover:bg-green-400 duration-100 in Tailwind CSS */
+  }
+  
+  /* Hover effect for the <button> element */
+  .main-buttun:hover {
+    background-color: #34D399; /* Equivalent to hover:bg-green-400 in Tailwind CSS */
+  }
+  header{
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgb(238, 242, 245);
+    /* box-shadow: 0 1px 4px hsl(0 4% 15% / 10%); */
+    z-index: 100;
+    padding-top: rem;
+    padding-bottom: 2.0rem;
+  }
+
+  .main-image1{
+    margin-right: 23rem;
+    margin-top: -33rem;
+    height: 7rem;
+    width: 3rem;
+  }
+  .main-image{
+    height: 41rem;
+    /* width: 22rem; */
+     /* Equivalent to text-5xl in Tailwind CSS */
+    /* vertical-align: text-top; Equivalent to items-start in Tailwind CSS */
+     /* Equivalent to object-fill in Tailwind CSS */  
+  }
+
+  .cart-count{
+    margin-left: -1.5rem;
+  }
+
+  .arrival-section{
+    display: flex;
+    
+    justify-content: center; /* Equivalent to justify-center in Tailwind CSS */
+    margin-top: 3.5rem; /* Equivalent to mt-14 in Tailwind CSS */
+    
+    
+  }
+  .arrival1{
+    text-align: center;
+  }
+
+  .arrival-title{
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    text-align: center; /* Equivalent to text-center in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+
+  }
+  .arrival-price{
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    color: #EF4444; /* Equivalent to text-red-500 in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    margin-right: 2rem; /* Equivalent to mr-8 in Tailwind CSS */
+    text-align: center; /* Equivalent to text-center in Tailwind CSS */
+  }
+
+  .arrival-button {
+    background-color: #EF4444; /* Equivalent to bg-red-500 in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-slate-200 in Tailwind CSS */
+    font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+    padding-bottom: 0.75rem; /* Equivalent to pb-3 in Tailwind CSS */
+    padding-left: 1rem; /* Equivalent to pl-4 in Tailwind CSS */
+    padding-right: 1rem; /* Equivalent to pr-4 in Tailwind CSS */
+    padding-top: 0.5rem; /* Equivalent to pt-2 in Tailwind CSS */
+    margin-right: 0.25rem; /* Equivalent to mr-1 in Tailwind CSS */
+    border-radius: 0.375rem; /* Equivalent to rounded-lg in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    margin-top: 0.25rem; /* Equivalent to mt-1 in Tailwind CSS */
+    margin-left: -1.25rem; /* Equivalent to -ml-5 in Tailwind CSS */
+  }
+  
+  /* Styling for the <i> element (Boxicons icon) inside the <button> */
+  .arrival-icon{
+     font-size: 1rem;/* Equivalent to text-xl in Tailwind CSS */
+    /* Equivalent to top-2 in Tailwind CSS */
+  }
+
+  .arrival-heading{
+    
+        font-size: 3.75rem; /* Equivalent to text-6xl in Tailwind CSS */
+        font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+        margin-top: 12rem; /* Equivalent to mt-48 in Tailwind CSS */
+        margin-left: 12rem; /* Equivalent to ml-44 in Tailwind CSS */
+      
+  }
+  .product-img{
+    margin-left: 1rem;
+  }
+
+  .gallery-section {
+    margin-top: 13rem; /* Equivalent to mt-52 in Tailwind CSS */
+    gap: 1.5rem; /* Equivalent to gap-6 in Tailwind CSS */
+    display: grid;
+    grid-template-rows: repeat(1, minmax(0, 1fr)); /* Equivalent to grid-rows-1 in Tailwind CSS */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Equivalent to grid-cols-4 in Tailwind CSS */
+    box-sizing: border-box; /* Equivalent to box-border in Tailwind CSS */
+  }
+
+  .gallery-image1{
+    
+        height: 100%; /* Equivalent to h-full in Tailwind CSS */
+        width: 100%; /* Equivalent to w-full in Tailwind CSS */
+        grid-column: span 2; /* Equivalent to col-span-2 in Tailwind CSS */
+      
+  }
+  .gallery-image2{
+    width: 100%;
+  }
+
+  .gallery-image34{
+    display: flex;
+    flex-direction: column; /* Equivalent to flex-col in Tailwind CSS */
+    gap: 1.5rem; /* Equivalent to gap-6 in Tailwind CSS */
+  
+  }
+
+  .video {
+    margin-top: 13rem; /* Equivalent to mt-52 in Tailwind CSS */
+    width: 100%; /* Equivalent to w-full in Tailwind CSS */
+    height: 24rem; /* Equivalent to h-96 in Tailwind CSS */
+    object-fit: fill; /* Equivalent to object-fill in Tailwind CSS */
+  }
+  .last-section{
+    
+        display: flex;
+        margin-top: 10rem; /* Equivalent to mt-40 in Tailwind CSS */
+        background-color: #EF4444; /* Equivalent to bg-red-500 in Tailwind CSS */
+        margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+        margin-right: 10rem; /* Equivalent to mr-40 in Tailwind CSS */
+        border-radius: 0.375rem; /* Equivalent to rounded-lg in Tailwind CSS */
+      
+  }
+  .last1{
+        margin-left: 4rem; /* Equivalent to ml-16 in Tailwind CSS */
+        margin-top: 1.5rem; /* Equivalent to mt-6 in Tailwind CSS */
+        margin-bottom: 1.75rem; /* Equivalent to mb-7 in Tailwind CSS */
+}
+
+.last2{
+    
+        margin-top: 1.5rem; /* Equivalent to mt-6 in Tailwind CSS */
+        margin-bottom: 1.75rem; /* Equivalent to mb-7 in Tailwind CSS */
+      
+}
+
+.last3{
+    margin-top: 1.5rem; /* Equivalent to mt-6 in Tailwind CSS */
+    margin-bottom: 1.75rem; /* Equivalent to mb-7 in Tailwind CSS */
+}
+.lasti{
+    font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind CSS */
+    padding-top: 1.25rem; /* Equivalent to pt-5 in Tailwind CSS */
+}
+
+.last1h2{
+    margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-slate-200 in Tailwind CSS */
+  }
+
+  .last2h2{
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-slate-200 in Tailwind CSS */
+    margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+  }
+
+  .last3h2 {
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-slate-200 in Tailwind CSS */
+    margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+  }
+
+  .last3p {
+    width: 66.67%; /* Equivalent to w-2/3 in Tailwind CSS */
+    margin-top: 0.75rem; /* Equivalent to mt-3 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    color: #F3F4F6; /* Equivalent to text-slate-200 in Tailwind CSS */
+  }
+  
+  .footer-section {
+    display: flex;
+    margin-top: 11rem; /* Equivalent to mt-44 in Tailwind CSS */
+    justify-content: space-evenly; /* Equivalent to justify-evenly in Tailwind CSS */
+    background-color: #111827; /* Equivalent to bg-neutral-800 in Tailwind CSS */
+    
+  }
+
+  .footer-section1 {
+    margin-top: 2.25rem; /* Equivalent to mt-9 in Tailwind CSS */
+    /* Add other styles here if needed */
+  }
+  .footer-section2{
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+    
+  }
+
+  .footer-section1h2 {
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    margin-left: 2.25rem; /* Equivalent to ml-9 in Tailwind CSS */
+    color: #D1D5DB; /* Equivalent to text-gray-300 in Tailwind CSS */
+  }
+  
+  /* Styling for the <span> element */
+  .h2s{
+    color: #EF4444; /* Equivalent to text-red-600 in Tailwind CSS */
+  }
+
+  .footer-section-p {
+    width: 13rem; /* Equivalent to w-52 in Tailwind CSS */
+    margin-left: 2.5rem; /* Equivalent to ml-10 in Tailwind CSS */
+    margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+    line-height: 2rem; /* Equivalent to leading-8 in Tailwind CSS */
+    font-weight: 500; /* Equivalent to font-medium in Tailwind CSS */
+    color: #D1D5DB; /* Equivalent to text-gray-300 in Tailwind CSS */
+  }
+
+  .footer-section2h2 {
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #6B7280; /* Equivalent to text-zinc-400 in Tailwind CSS */
+  }
+
+  .footer-section2h2div1{
+    margin-top: 1.25rem;
+  }
+
+  .bottom1{
+    margin-top: 2.25rem; /* Equivalent to mt-9 in Tailwind CSS */
+    padding-top: 1.25rem; /* Equivalent to pt-5 in Tailwind CSS */
+    font-weight: 500; /* Equivalent to font-medium in Tailwind CSS */
+    color: #D1D5DB; /* Equivalent to text-gray-300 in Tailwind CSS */
+  }
+
+  .bottom2 {
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+    color: #6B7280; /* Equivalent to text-zinc-400 in Tailwind CSS */
+  }
+
+  .bottom775 {
+    margin-top: 0.75rem; /* Equivalent to mt-3 in Tailwind CSS */
+    font-weight: 500; /* Equivalent to font-medium in Tailwind CSS */
+    color: #D1D5DB; /* Equivalent to text-gray-300 in Tailwind CSS */
+  }
+
+  .copy1 {
+    background-color: #111827; /* Equivalent to bg-neutral-800 in Tailwind CSS */
+    /* Add other styles here if needed */
+  }
+
+  .copy2{
+    color: #D1D5DB; /* Equivalent to text-gray-300 in Tailwind CSS */
+    margin-left: 11rem; /* Equivalent to ml-44 in Tailwind CSS */
+  }
+  .about-heading{
+    
+      position: relative; /* Equivalent to relative in Tailwind CSS */
+      margin-top: 5rem; /* Equivalent to mt-20 in Tailwind CSS */
+      /* Add other styles here if needed */
+    
+  }
+  .about-h1{
+    
+      font-size: 3rem; /* Equivalent to text-5xl in Tailwind CSS */
+      position: absolute; /* Equivalent to absolute in Tailwind CSS */
+      color: #F3F4F6; /* Equivalent to text-slate-100 in Tailwind CSS */
+      margin-top: 7rem; /* Equivalent to mt-28 in Tailwind CSS */
+      margin-left: 9rem; /* Equivalent to ml-36 in Tailwind CSS */
+      line-height: 1.6; /* Equivalent to leading-normal in Tailwind CSS */
+      text-align: center; /* Equivalent to text-center in Tailwind CSS */
+      font-weight: 500; /* Equivalent to font-medium in Tailwind CSS */
+      font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    
+  }
+  .about-spans{
+    color: #EF4444; /* Equivalent to text-red-600 in Tailwind CSS */
+  }
+
+  .about-discription{
+    
+      margin-left: 10rem; /* Equivalent to ml-40 in Tailwind CSS */
+      margin-top: 13rem; /* Equivalent to mt-52 in Tailwind CSS */
+      /* Add other styles here if needed */
+    
+  }
+  .about1{
+    font-size: 3.75rem; /* Equivalent to text-5xl in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    font-weight: 600;
+  }
+  .about2{
+    margin-top: 2.5rem; /* Equivalent to mt-10 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    line-height: 2.25rem; /* Equivalent to leading-9 in Tailwind CSS */
+    width: 55%; /* Equivalent to w-11/12 in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    color: #6B7280; 
+  }
+  .about3{
+    margin-top: 10rem; /* Equivalent to mt-40 in Tailwind CSS */
+    font-size: 3.75rem; /* Equivalent to text-5xl in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    font-weight: 600;
+    margin-left: 32rem;
+  }
+  .about4{
+    margin-top: 2.5rem; /* Equivalent to mt-10 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    line-height: 2.25rem; /* Equivalent to leading-9 in Tailwind CSS */
+    width: 55%; /* Equivalent to w-11/12 in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    color: #6B7280;
+    margin-left: 32rem;
+  }
+  .about5{
+    margin-top: 13rem; /* Equivalent to mt-52 in Tailwind CSS */
+    margin-left: 13rem; 
+  }
+  .about6{
+    margin-top: 2.5rem; /* Equivalent to mt-10 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    line-height: 2.25rem; /* Equivalent to leading-9 in Tailwind CSS */
+    width: 91.67%; /* Equivalent to w-11/12 in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    color: #6B7280; 
+  }
+  .about7{
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    font-weight: 600;
+  }
+  .about8{
+    margin-top: 1rem; /* Equivalent to mt-4 in Tailwind CSS */
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    line-height: 2.25rem; /* Equivalent to leading-9 in Tailwind CSS */
+    width: 55%; /* Equivalent to w-11/12 in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    color: #6B7280; 
+    }
+
+  .contact1{
+    margin-top: 15rem;
+  }  
+  .contact2{
+    text-align: center; /* Equivalent to text-center in Tailwind CSS */
+    font-size: 1.875rem; /* Equivalent to text-3xl in Tailwind CSS */
+    font-weight: 400; /* Equivalent to font-normal in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    margin-top: 5rem; 
+  }
+
+  .contact3{
+    text-align: center; /* Equivalent to text-center in Tailwind CSS */
+    font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    margin-top: 1.75rem;
+  }
+
+  .contact4{
+    display: flex; /* Equivalent to flex in Tailwind CSS */
+    justify-content: space-evenly; /* Equivalent to justify-evenly in Tailwind CSS */
+    margin-top: 8rem; /* Equivalent to mt-32 in Tailwind CSS */
+    font-family: 'Lora', serif;
+  }
+
+  .contact5{
+    text-align: center; 
+  }
+  .contact6{
+    font-size: 2.5rem;
+  }
+
+  .contact7{
+    font-size: 1.25rem; /* Equivalent to text-2xl in Tailwind CSS */
+    margin-top: 1.25rem; 
+  }
+  .contact8{
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind CSS */
+    margin-top: 0.5rem; 
+  }
+
+  .cont1{
+    margin-left: 8rem;
+  }
+  .cont2{
+    margin-top: 10rem; /* Equivalent to mt-40 in Tailwind CSS */
+    margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+    font-size: 1.875rem; /* Equivalent to text-3xl in Tailwind CSS */
+    font-family: 'Lora', serif; /* Equivalent to font-lora in Tailwind CSS */
+    font-weight: 700; 
+  }
+
+  /* CSS file */
+
+/* Styling for the <textarea> element with the specified classes */
+#message {
+  display: block; /* Equivalent to block in Tailwind CSS */
+  padding: 0.625rem; /* Equivalent to p-2.5 in Tailwind CSS */
+  width: 58.3333%; /* Equivalent to w-7/12 in Tailwind CSS */
+  margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+  margin-top: 2rem; /* Equivalent to mt-8 in Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+  color: #333333; /* Equivalent to text-gray-900 in Tailwind CSS */
+  background-color: #F3F4F6; /* Equivalent to bg-gray-50 in Tailwind CSS */
+  border: 1px solid #D1D5DB; /* Equivalent to border in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-lg in Tailwind CSS */
+  border-color: #9CA3AF; /* Equivalent to border-gray-300 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+/* Dark mode styles */
+#message.dark-mode {
+  background-color: #F9FAFB; /* Equivalent to dark:bg-gray-100 in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to dark:border-gray-600 in Tailwind CSS */
+  color: #64748B; /* Equivalent to dark:text-slate-600 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to dark:text-lg in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to dark:focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to dark:focus:border-blue-500 in Tailwind CSS */
+}
+
+/* Placeholder styles */
+#message::placeholder {
+  color: #6B7280; /* Equivalent to dark:placeholder-gray-400 in Tailwind CSS */
+}
+
+/* Focus styles */
+#message:focus {
+  border-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+
+/* CSS file */
+
+/* Styling for the input element with the specified classes */
+#user-name {
+  margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+  border-style: solid; /* Equivalent to border-solid in Tailwind CSS */
+  margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow in Tailwind CSS */
+  width: 25%; /* Equivalent to w-3/12 in Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-right: 0.75rem; /* Adjusted for px-3 in Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-left: 0.75rem; /* Adjusted for px-3 in Tailwind CSS */
+  line-height: 1.25rem; /* Equivalent to leading-tight in Tailwind CSS */
+  outline: none; /* Equivalent to focus:outline-none in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to border in Tailwind CSS */
+  color: #333333; /* Equivalent to text-gray-900 in Tailwind CSS */
+  background-color: #F3F4F6; /* Equivalent to bg-gray-50 in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-lg in Tailwind CSS */
+  border-width: 1px; /* Equivalent to border in Tailwind CSS */
+  border-color: #9CA3AF; /* Equivalent to border-gray-300 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+/* Dark mode styles */
+#user-name.dark-mode {
+  background-color: #F9FAFB; /* Equivalent to dark:bg-gray-100 in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to dark:border-gray-600 in Tailwind CSS */
+  color: #64748B; /* Equivalent to dark:text-slate-600 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to dark:text-lg in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to dark:focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to dark:focus:border-red-500 in Tailwind CSS */
+}
+
+/* Placeholder styles */
+#user-name::placeholder {
+  color: #6B7280; /* Equivalent to dark:placeholder-gray-400 in Tailwind CSS */
+}
+
+/* Focus styles */
+#user-name:focus {
+  border-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+
+/* CSS file */
+
+/* Styling for the input element with the specified classes */
+#Email {
+  margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+  border-style: solid; /* Equivalent to border-solid in Tailwind CSS */
+  margin-left: 3.5rem; /* Equivalent to ml-14 in Tailwind CSS */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow in Tailwind CSS */
+  width: 24rem; /* Equivalent to w-96 in Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-right: 0.75rem; /* Equivalent to px-3 in Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-left: 0.75rem; /* Equivalent to px-3 in Tailwind CSS */
+  color: #333333; /* Equivalent to text-gray-900 in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded in Tailwind CSS */
+  outline: none; /* Equivalent to focus:outline-none in Tailwind CSS */
+  background-color: #F3F4F6; /* Equivalent to bg-gray-50 in Tailwind CSS */
+  border: 1px solid #D1D5DB; /* Equivalent to border in Tailwind CSS */
+  line-height: 1.25rem; /* Equivalent to leading-tight in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+/* Dark mode styles */
+#Email.dark-mode {
+  background-color: #F9FAFB; /* Equivalent to dark:bg-gray-100 in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to dark:border-gray-600 in Tailwind CSS */
+  color: #64748B; /* Equivalent to dark:text-slate-600 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to dark:text-lg in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to dark:focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to dark:focus:border-red-500 in Tailwind CSS */
+}
+
+/* Placeholder styles */
+#Email::placeholder {
+  color: #6B7280; /* Equivalent to dark:placeholder-gray-400 in Tailwind CSS */
+}
+
+/* Focus styles */
+#Email:focus {
+  border-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+/* CSS file */
+
+/* Styling for the input element with the specified classes */
+#Subject {
+  margin-top: 1.25rem; /* Equivalent to mt-5 in Tailwind CSS */
+  border-style: solid; /* Equivalent to border-solid in Tailwind CSS */
+  margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow in Tailwind CSS */
+  width: 58.3333%; /* Equivalent to w-7/12 in Tailwind CSS */
+  padding-top: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-right: 0.75rem; /* Equivalent to px-3 in Tailwind CSS */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 in Tailwind CSS */
+  padding-left: 0.75rem; /* Equivalent to px-3 in Tailwind CSS */
+  line-height: 1.25rem; /* Equivalent to leading-tight in Tailwind CSS */
+  outline: none; /* Equivalent to focus:outline-none in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to border in Tailwind CSS */
+  color: #333333; /* Equivalent to text-gray-900 in Tailwind CSS */
+  background-color: #F3F4F6; /* Equivalent to bg-gray-50 in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-lg in Tailwind CSS */
+  border-width: 1px; /* Equivalent to border in Tailwind CSS */
+  border-color: #9CA3AF; /* Equivalent to border-gray-300 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+/* Dark mode styles */
+#Subject.dark-mode {
+  background-color: #F9FAFB; /* Equivalent to dark:bg-gray-100 in Tailwind CSS */
+  border-color: #D1D5DB; /* Equivalent to dark:border-gray-600 in Tailwind CSS */
+  color: #64748B; /* Equivalent to dark:text-slate-600 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to dark:text-lg in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to dark:focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to dark:focus:border-red-500 in Tailwind CSS */
+}
+
+/* Placeholder styles */
+#Subject::placeholder {
+  color: #6B7280; /* Equivalent to dark:placeholder-gray-400 in Tailwind CSS */
+}
+
+/* Focus styles */
+#Subject:focus {
+  border-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-color: #2563EB; /* Equivalent to focus:ring-blue-500 in Tailwind CSS */
+  outline-style: solid; /* Equivalent to focus:border-blue-500 in Tailwind CSS */
+}
+
+.contact-send{
+  background-color: #DC2626; /* Equivalent to bg-red-600 in Tailwind CSS */
+  padding: 0.75rem; /* Equivalent to p-3 in Tailwind CSS */
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  color: #F3F4F6; /* Equivalent to text-gray-50 in Tailwind CSS */
+  text-align: center; /* Equivalent to text-center in Tailwind CSS */
+  margin: 2.5rem 0; /* Equivalent to m-10 in Tailwind CSS */
+  margin-left: 8rem; /* Equivalent to ml-32 in Tailwind CSS */
+  width: 8rem; /* Equivalent to w-32 in Tailwind CSS */
+  font-size: 1.25rem;
+}
+
+
+#new-nav{
+  display: none;
+}
+
+#new-navbars{
+  display: block;
+}
+@media (max-width: 640px) {
+  #new-nav{
+    display: block;
+  }
+
+  #new-navbars{
+    display: none;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}" />  
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">  
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+          <!-- icons -->
+    <script src="https://kit.fontawesome.com/1a468e31c5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   
+
+    <script src="https://kit.fontawesome.com/1a468e31c5.js" crossorigin="anonymous"></script>
+
+   
+    <title>TimeZone</title>
+    <!-- <style>
+        
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-icons {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .nav-icons a {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            /* Add a class to toggle the visibility of the navigation links */
+            .nav-links.active {
+                display: flex;
+            }
+        }
+    </style> -->
+    
+</head>
+<body>
+
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/}" href="#">home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/shop}" href="#">shop</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
+                </li>
+                <li class="nav-item active">
+                    <span class="nav-link" th:text="${cartCount}">0</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+-->
+
+
+<header style="background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);">  
+    <!-- NAV  -->
+    <div class="nav container">
+        
+        <h2 class="h11">Time <span class="h22">Zone</span></h2>
+
+        <div class="nav-links"> 
+            <!-- th:href="@{/}"   -->
+            <a  th:href="@{/admin}" href="#">Home</a>  
+            <a th:href="@{/shop}" href="#">Shop</a>
+            <a th:href="@{/about}" href="#">About</a>
+            <a th:href="@{/contact}" href="#">Contact</a>  
+             
+        </div>
+
+        <!-- CART ICON  -->
+        <div class="nav-icons">
+            <a sec:authorize="isAnonymous()" th:href="@{/login}" href="#" class="login-u">Login <i class="fa-solid fa-user icon-size"></i></a>
+            <a  sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Logout <i class="fa-solid fa-user icon-size"></i></a>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <a th:href="@{/cart}" href="#" class="login-u">Cart <i class='bx bx-shopping-bag -mt-1 icon-size' ></i> </a>
+            <span class="cart-count" th:text="${cartCount}" style="font-size: 0.8rem;">0</span>
+            
+        </div>
+        
+    </div>
+</header>
+
+
+<!-- Main Section -->
+<div class="main-section">
+    <div class="main-section-right">
+        <h1 class="main-heading">Select Your New <br> Perfect style</h1>
+        <p class="main-discription">TimeZone is home to the greatest collection of pre-owned luxury watches, all certified as authentic and Collector Quality.</p>
+        <a th:href="@{/shop}" href="#"> <button class="main-buttun">Shop Now</button></a>
+
+    </div>
+    <div class="main-image1">
+        <img th:src="@{/images/watch.png.webp}"  src="../static/images/watch.png.webp" alt="" class="main-image" >
+    </div>
+</div>
+
+<!-- New-arrival-section -->
+<h1 class="arrival-heading">New Arrivals</h1>
+<div class="arrival-section">
+        
+    <div class="arrival1">
+        <img th:src="@{/images/product2.webp}"  src="../static/images/product2.webp" alt="" class="product-img">
+        <h2 class="arrival-title">IWC PREMIUM watch</h2>
+        <span class="arrival-price">$ 550.5</span> <br>
+        <a th:href="@{/shop}" href="#">
+            <button class="arrival-button">Shop Now <i class='bx bx-shopping-bag arrival-icon'></i></button>
+        </a>
+       
+    </div>
+
+
+    <div class=" arrival1">
+        <img th:src="@{/images/product3.png}"  src="../static/images/product3.png"  alt="" class="product-img">
+        <h2 class="arrival-title">TAG Heuer Premium watch</h2>
+        <span class="arrival-price">$ 780.5</span> <br>
+        <a th:href="@{/shop}" href="#">
+            <button class="arrival-button">Shop Now <i class='bx bx-shopping-bag arrival-icon'></i></button>
+        </a>
+        
+        
+    </div>
+
+
+    <div class="arrival1">
+        <img th:src="@{/images/new_product4.png}"  src="../static/images/new_product4.png" alt="" class="product-img">
+        <h2 class="arrival-title">Breitling Premium watch</h2>
+        <span class="arrival-price">$ 1485</span> <br>
+        <a th:href="@{/shop}" href="#">
+            <button class="arrival-button">Shop Now <i class='bx bx-shopping-bag arrival-icon'></i></button>
+        </a>
+        
+    </div>
+    
+</div>
+
+<!-- gallery section -->
+<div class="gallery-section">
+    <img th:src="@{/images/gallery5.png}"  src="../static/images/gallery5.png" alt="" class="h-full w-full grid col-span-2 gallery-image1">
+    <img th:src="@{/images/gallery7.png}"  src="../static/images/gallery7.png" alt="" class="gallery-image2 ">
+    <div class="gallery-image34">
+        <img th:src="@{/images/gallery8.png}"  src="../static/images/gallery8.png" alt="" class="">
+        <img th:src="@{/images/gallery9.png}"  src="../static/images/gallery9.png" alt="" class="">
+    </div>
+    
+</div>
+
+<!-- video -->
+<video th:src="@{/images/Media Player 2023-09-24 20-31-21.mp4}"  src="../static/images/Media Player 2023-09-24 20-31-21.mp4" class="video" loop autoplay controls muted></video>
+
+
+<!-- Last Section -->
+<div class="last-section">
+    <div class="last1">
+        <i class="fa-solid fa-truck-arrow-right pt-5 lasti"></i>
+        <h2 class="last1h2">Free Shipping Method</h2>
+        <p class="last3p">"Enjoy hassle-free shopping with our Free Shipping Method." </p>
+
+    </div>
+
+    <div class="last2">
+        
+        <i class="fa-solid fa-lock text-4xl pt-5 lasti "></i>
+        <h2 class="last2h2">Secure Payment System</h2>
+        <p class="last3p">"Experience peace of mind with our Secure Payment Method" </p>
+        
+
+    </div>
+
+    <div class="last3">
+        <i class="fa-brands fa-squarespace text-4xl pt-5 lasti"></i>
+        <h2 class="last3h2">100% Authenticity Guarantee</h2>
+        <p class="last3p"> "Assures you that every product we offer is genuine and of the highest quality" </p>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer-section ">
+    <div class="footer-section1">
+        <h2 class="footer-section1h2">Time <span class="h2s">Zone</span></h2>
+        <p class="footer-section-p">Select Your New Perfect style with quality assurence.</p>
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="footer-section2h2">Quick Links</h2>
+        
+        <div class="footer-section2h2div1">
+            <a href="about.html" class="bottom1" target="_blank">About</a>  
+        <p class="bottom775">Offers & Discounts</p>
+        <p class="bottom775">Get Coupon</p>
+        <p class="bottom775"> Contact Us</p>
+
+        </div>
+        
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="bottom2">New Products</h2>
+        <p class="bottom775">Women Cloth</p>
+        <p class="bottom775">Fashion Accessories</p>
+        <p class="bottom775">Man Accessories</p>
+        <p class="bottom775"> Rubber made Toys</p>
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="bottom2">Support</h2>
+        <p class="bottom775">Frequently Asked Questions</p>
+        <p class="bottom775">Terms & Conditions</p>
+        <p class="bottom775">Privacy Policy</p>
+        <p class="bottom775"> Report a Payment Issue</p>
+
+    </div>
+    
+</div>
+
+
+
+<div class="copy1">
+    <p class="copy2">Copyright ©2023 All rights reserved </p>
+</div>
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  -->
+</body>
+</html>

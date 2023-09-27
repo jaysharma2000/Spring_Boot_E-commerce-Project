@@ -1,0 +1,162 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}" /> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/1a468e31c5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1a468e31c5.js" crossorigin="anonymous"></script>
+
+    <title>About-TimeZone</title>
+</head>
+<body style="background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);">
+
+
+<!-- navbar -->
+<header class="fixed-top bg-light shadow" style="background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);">
+    <!-- NAV  -->
+    <div class="container" >
+        <h2 class="h11" style="font-family: 'Lora', serif; font-size: 2rem; font-weight: 700; margin-left: -2rem; margin-top: 1.4rem;">Time <span class="h22" style="color: #e53e3e;">Zone</span></h2>
+
+        <div class="nav-links" style="display: flex; gap: 2rem; font-weight: 700; font-size: 1.5rem; color: #616e82; font-family: 'Lora', serif; margin-left: 23rem; margin-top: -2.8rem;">
+            <a th:href="@{/}" href="#" style="text-decoration: none; color: inherit;">Home</a>
+            <a th:href="@{/shop}" href="#" style="text-decoration: none; color: inherit;">Shop</a>
+            <a th:href="@{/about}" href="#" style="text-decoration: none; color: inherit;">About</a>
+            <a th:href="@{/contact}" style="text-decoration: none; color: inherit;">Contact</a>
+        </div>
+
+        <!-- CART ICON  -->
+        <div class="nav-icons" style="display: flex; gap: 1.5rem; font-size: 1.3rem; font-weight: 500; margin-left: 56.5rem; margin-top: -2rem; color: black; text-decoration: none;">
+            <a sec:authorize="isAnonymous()" th:href="@{/login}" href="#" class="login-u" style="color: rgb(48, 48, 48); font-weight: 700; font-family: 'Times New Roman', Times, serif;">Login <i class="fa-solid fa-user icon-size" style="font-size: 1rem;"></i></a>
+            <a sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#" style="color: rgb(48, 48, 48); font-weight: 700; font-family: 'Times New Roman', Times, serif;">Logout <i class="fa-solid fa-user icon-size" style="font-size: 1rem;"></i></a>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <a th:href="@{/cart}" href="#" class="login-u" style="color: rgb(48, 48, 48); font-weight: 700; font-family: 'Times New Roman', Times, serif; ">Cart <i class='bx bx-shopping-bag -mt-1 icon-size'></i></a>
+            <span th:text="${cartCount}" class="cart-count" style="font-size: 1rem; color: black;">0</span>
+        </div>
+    </div>
+</header>
+
+<!-- Heading -->
+<div class="about-heading">
+    <h1 class="about-h1">About<br>Time<span class="about-spans">Zone</span> </h1>
+    <img th:src="@{/images/about-header@2x.jpg}"  src="../static/images/about-header@2x.jpg" alt="" style="display: flex; height: 26rem; width: 100%; margin-top: 5.7rem;">
+</div>
+
+
+<!-- Discription -->
+<div class="about-discription">
+    <h2 class="about1">
+        Inception
+    </h2>
+    <p class="about2">Launched in 2009, TimeZone is the Lifestyle chain under the Priority Group, a leading fashion conglomerate that pioneered in the year 2000 through the launch of luxury watch brands in India. It is the brainchild of Mr. Shailesh and Mrs. Manisha Sangani. With the first outlet opened in New Delhi, TimeZone and Just In Vogue now retails through 76 exclusive outlets present in 39 cities across India.</p>
+
+    <h2 class="about3">Service</h2>
+    <p class="about4">Every order placed on our website is fulfilled directly from one of our 76 stores across India. You can always count on us for free 1-2 day delivery, hassle-free returns, great prices, and awesome, extra speedy customer service.
+
+        If you are in need of any assistance post your purchase, you can walk in to one of our stores and our helpful staff is always available to answer any questions you may have or help in any way that is required. We are at your service!</p>
+</div>
+ 
+<div class="about5">
+    <p class="about6"> <span class="about7">...To India's Largest & most trusted Watch Retailer</span> <br>
+
+        <p class="about8">Housing over 40 top international and national brands, our diverse portfolio of world class brands makes us a favorite destination of any watch lover. We offer the latest fashion products of coveted lifestyle brands all under one roof. 
+            
+            We work to create an excellent retailing ambiance, constant connection and service for you where you can buy your favorite brands while getting the best deals.
+            
+            We strive to be a bench mark in Luxury Retailing by marketing branded lifestyle products in a world class ambience.</p>
+        </p>
+</div>
+
+
+<!-- Last Section -->
+<div class="last-section">
+    <div class="last1">
+        <i class="fa-solid fa-truck-arrow-right pt-5 lasti"></i>
+        <h2 class="last1h2">Free Shipping Method</h2>
+        <p class="last3p">"Enjoy hassle-free shopping with our Free Shipping Method." </p>
+
+    </div>
+
+    <div class="last2">
+        
+        <i class="fa-solid fa-lock text-4xl pt-5 lasti "></i>
+        <h2 class="last2h2">Secure Payment System</h2>
+        <p class="last3p">"Experience peace of mind with our Secure Payment Method" </p>
+        
+
+    </div>
+
+    <div class="last3">
+        <i class="fa-brands fa-squarespace text-4xl pt-5 lasti"></i>
+        <h2 class="last3h2">100% Authenticity Guarantee</h2>
+        <p class="last3p"> "Assures you that every product we offer is genuine and of the highest quality" </p>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer-section " style="margin-bottom: -3rem;">
+    <div class="footer-section1">
+        <h2 class="footer-section1h2">Time <span class="h2s">Zone</span></h2>
+        <p class="footer-section-p">Select Your New Perfect style with quality assurence.</p>
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="footer-section2h2">Quick Links</h2>
+        
+        <div class="footer-section2h2div1">
+            <a href="about.html" class="bottom1" target="_blank">About</a>  
+        <p class="bottom775">Offers & Discounts</p>
+        <p class="bottom775">Get Coupon</p>
+        <p class="bottom775"> Contact Us</p>
+
+        </div>
+        
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="bottom2">New Products</h2>
+        <p class="bottom775">Women Cloth</p>
+        <p class="bottom775">Fashion Accessories</p>
+        <p class="bottom775">Man Accessories</p>
+        <p class="bottom775"> Rubber made Toys</p>
+
+    </div>
+
+    <div class="footer-section2">
+        <h2 class="bottom2">Support</h2>
+        <p class="bottom775">Frequently Asked Questions</p>
+        <p class="bottom775">Terms & Conditions</p>
+        <p class="bottom775">Privacy Policy</p>
+        <p class="bottom775"> Report a Payment Issue</p>
+
+    </div>
+    
+</div>
+
+
+
+<div class="copy1">
+    <p class="copy2">Copyright ©2023 All rights reserved </p>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
